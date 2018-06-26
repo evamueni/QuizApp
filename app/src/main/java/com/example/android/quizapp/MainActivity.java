@@ -14,6 +14,7 @@ import android.widget.RadioButton;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+    //Global variables
     String name;
     int score;
     int languages;
@@ -33,36 +34,36 @@ public class MainActivity extends AppCompatActivity {
             case R.id.English:
                 if (checked) {
                     languages += 1;
-                    checked=false;
+                    checked = false;
                 } else
 
                     break;
             case R.id.German:
                 if (checked) {
                     languages += 1;
-                    checked=false;
+                    checked = false;
                 } else
                     break;
 
             case R.id.French:
                 if (checked) {
                     languages += 1;
-                    checked=false;
+                    checked = false;
                 } else
                     break;
         }
-        }
+    }
 
     public void finish(View view) {
-        // Is the button now checked?
-        //boolean checked = ((RadioButton) view).isChecked();
+
         RadioButton like = findViewById(R.id.radio_Like);
         RadioButton does = findViewById(R.id.radio_does);
         RadioButton wantsBreakfast = findViewById(R.id.radio_wantsBreakfast);
         RadioButton isDay = findViewById(R.id.radio_isDay);
-        EditText nameText=findViewById(R.id.username);
-        name =nameText.getText().toString();
+        EditText nameText = findViewById(R.id.username);
+        name = nameText.getText().toString();
 
+        // Are the correct checkboxes checked?
         if (like.isChecked() == true) {
             // Add to the score
             score += 1;
@@ -79,25 +80,32 @@ public class MainActivity extends AppCompatActivity {
             // Add to the score
             score += 1;
         }
-//        Toast toast = Toast.makeText(getApplicationContext(), "Your score is "+score, Toast.LENGTH_SHORT);
-//        toast.show();
+        //Set the message according to the number of languages
+        String message;
+        if (languages!=1){
+             message= "Hi " + name + ", your Score is: " + score + " \nAnd you know " + languages + " Languages!!";
+        }
+        else message="Hi " + name + " your Score is: " + score + " \nAnd you know " + languages + " Language!!";
+
+//Display a dialog to show the results
         AlertDialog.Builder a_builder = new AlertDialog.Builder(MainActivity.this);
-        a_builder.setMessage("Hi " + name + " Your Score is: " + score+" \n And you know "+languages+" Languages!!")
+        a_builder.setMessage(message)
                 .setCancelable(false)
                 .setPositiveButton("Proceed", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         score = 0;
+                        languages=0;
                         Intent mIntent = getIntent();
                         finish();
                         startActivity(mIntent);
                     }
                 })
-                .setNegativeButton("Close App", new DialogInterface.OnClickListener() {
+                .setNegativeButton("Exit", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         score = 0;
-                        languages=0;
+                        languages = 0;
                         finish();
                     }
                 });
