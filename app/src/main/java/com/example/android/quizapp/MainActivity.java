@@ -33,18 +33,21 @@ public class MainActivity extends AppCompatActivity {
             case R.id.English:
                 if (checked) {
                     languages += 1;
+                    checked=false;
                 } else
 
                     break;
             case R.id.German:
                 if (checked) {
                     languages += 1;
+                    checked=false;
                 } else
                     break;
 
             case R.id.French:
                 if (checked) {
                     languages += 1;
+                    checked=false;
                 } else
                     break;
         }
@@ -94,6 +97,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         score = 0;
+                        languages=0;
                         finish();
                     }
                 });
