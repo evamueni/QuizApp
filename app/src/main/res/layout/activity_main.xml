@@ -13,8 +13,8 @@
             android:id="@+id/username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Name"
             android:layout_marginLeft="16dp"
+            android:hint="Name"
             android:paddingTop="16dp" />
 
         <TextView
@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:paddingLeft="16dp"
             android:paddingTop="16dp"
-            android:text="1. Which of these languages are you fluent in?" />
+            android:text="Which of these languages are you fluent in?" />
 
         <CheckBox
             android:id="@+id/English"
@@ -56,7 +56,22 @@
             android:layout_height="wrap_content"
             android:paddingLeft="16dp"
             android:paddingTop="16dp"
-            android:text="2. Do you _____ chocolate milk?" />
+            android:text="Please answer the questions below by selecting the correct option"
+            android:textColor="#000000" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:text="1. Do you _____ chocolate milk?" />
 
         <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="fill_parent"
@@ -89,7 +104,7 @@
             android:layout_height="wrap_content"
             android:paddingLeft="16dp"
             android:paddingTop="16dp"
-            android:text="3. He _____ not want to go to the movies." />
+            android:text="2. He _____ not want to go to the movies." />
 
         <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="fill_parent"
@@ -122,7 +137,7 @@
             android:layout_height="wrap_content"
             android:paddingLeft="16dp"
             android:paddingTop="16dp"
-            android:text="4. He ____________ now." />
+            android:text="3. He ____________ now." />
 
         <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="fill_parent"
@@ -155,7 +170,7 @@
             android:layout_height="wrap_content"
             android:paddingLeft="16dp"
             android:paddingTop="16dp"
-            android:text="5. It _____ a beautiful day today." />
+            android:text="4. It _____ a beautiful day today." />
 
         <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="fill_parent"
