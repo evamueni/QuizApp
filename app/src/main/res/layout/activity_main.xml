@@ -3,190 +3,195 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/username"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Name"
-        android:paddingLeft="16dp"
-        android:paddingTop="16dp" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingLeft="16dp"
-        android:paddingTop="16dp"
-        android:text="1. Which of these languages are you fluent in?" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <CheckBox android:id="@+id/English"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="English"
-        android:onClick="onCheckboxClicked"
-        android:layout_marginTop="16dp"
-        android:layout_marginLeft="16dp" />
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:layout_marginLeft="16dp"
+            android:paddingTop="16dp" />
 
-    <CheckBox android:id="@+id/German"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="German"
-        android:onClick="onCheckboxClicked"
-        android:layout_marginTop="1dp"
-        android:layout_marginLeft="16dp" />
-
-    <CheckBox android:id="@+id/French"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="French"
-        android:onClick="onCheckboxClicked"
-        android:layout_marginTop="1dp"
-        android:layout_marginLeft="16dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingLeft="16dp"
-        android:paddingTop="16dp"
-        android:text="2. Do you _____ chocolate milk?" />
-
-    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingLeft="16dp"
-        android:paddingTop="16dp">
-
-        <RadioButton
-            android:id="@+id/radio_Like"
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Like" />
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:text="1. Which of these languages are you fluent in?" />
 
-        <RadioButton
-            android:id="@+id/radio_likes"
+        <CheckBox
+            android:id="@+id/English"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="likes" />
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:onClick="onCheckboxClicked"
+            android:text="English" />
 
-        <RadioButton
-            android:id="@+id/radio_beLike"
+        <CheckBox
+            android:id="@+id/German"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Be Like" />
-    </RadioGroup>
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="1dp"
+            android:onClick="onCheckboxClicked"
+            android:text="German" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingLeft="16dp"
-        android:paddingTop="16dp"
-        android:text="3. He _____ not want to go to the movies." />
-
-    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingLeft="16dp"
-        android:paddingTop="16dp">
-
-        <RadioButton
-            android:id="@+id/radio_do"
+        <CheckBox
+            android:id="@+id/French"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="do" />
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="1dp"
+            android:onClick="onCheckboxClicked"
+            android:text="French" />
 
-        <RadioButton
-            android:id="@+id/radio_does"
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="does" />
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:text="2. Do you _____ chocolate milk?" />
 
-        <RadioButton
-            android:id="@+id/radio_is"
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp">
+
+            <RadioButton
+                android:id="@+id/radio_Like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Like" />
+
+            <RadioButton
+                android:id="@+id/radio_likes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="likes" />
+
+            <RadioButton
+                android:id="@+id/radio_beLike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Be Like" />
+        </RadioGroup>
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="is" />
-    </RadioGroup>
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:text="3. He _____ not want to go to the movies." />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingLeft="16dp"
-        android:paddingTop="16dp"
-        android:text="4. He ____________ now." />
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp">
 
-    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingLeft="16dp"
-        android:paddingTop="16dp">
+            <RadioButton
+                android:id="@+id/radio_do"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="do" />
 
-        <RadioButton
-            android:id="@+id/radio_playsTennis"
+            <RadioButton
+                android:id="@+id/radio_does"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="does" />
+
+            <RadioButton
+                android:id="@+id/radio_is"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="is" />
+        </RadioGroup>
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="plays tennis" />
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:text="4. He ____________ now." />
 
-        <RadioButton
-            android:id="@+id/radio_wantsBreakfast"
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp">
+
+            <RadioButton
+                android:id="@+id/radio_playsTennis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="plays tennis" />
+
+            <RadioButton
+                android:id="@+id/radio_wantsBreakfast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="wants breakfast" />
+
+            <RadioButton
+                android:id="@+id/radio_walksHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="walks home" />
+        </RadioGroup>
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="wants breakfast" />
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:text="5. It _____ a beautiful day today." />
 
-        <RadioButton
-            android:id="@+id/radio_walksHome"
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp">
+
+            <RadioButton
+                android:id="@+id/radio_isDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="is" />
+
+            <RadioButton
+                android:id="@+id/radio_are"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="are" />
+
+            <RadioButton
+                android:id="@+id/radio_am"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="am" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/finish_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="walks home" />
-    </RadioGroup>
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:onClick="finish"
+            android:text="SUBMIT"
+            android:textSize="20sp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingLeft="16dp"
-        android:paddingTop="16dp"
-        android:text="5. It _____ a beautiful day today." />
-
-    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingLeft="16dp"
-        android:paddingTop="16dp">
-
-        <RadioButton
-            android:id="@+id/radio_isDay"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="is" />
-
-        <RadioButton
-            android:id="@+id/radio_are"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="are" />
-
-        <RadioButton
-            android:id="@+id/radio_am"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="am" />
-    </RadioGroup>
-
-    <Button
-        android:id="@+id/finish_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="24dp"
-        android:onClick="finish"
-        android:text="SUBMIT"
-        android:textSize="20dp" />
-
-</LinearLayout>
+    </LinearLayout>
 </ScrollView>
